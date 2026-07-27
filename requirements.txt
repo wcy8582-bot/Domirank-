@@ -1,0 +1,9 @@
+# DomiRank+ Python 依赖
+# 请根据各脚本实际的 import 情况增删（用 pip freeze 可查看当前环境版本）
+numpy
+scipy
+networkx
+python-igraph
+leidenalg
+pandas
+matplotlib

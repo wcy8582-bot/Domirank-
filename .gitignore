@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+domirank_venv/
+
+# C++ 编译产物
+*.exe
+*.o
+*.out
+build/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+.zshrc
+
+# 大文件/临时文件
+*.log.tmp
