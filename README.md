@@ -19,7 +19,7 @@ This repository contains the official implementation of the paper *"Effective an
 │   ├── domirank_结构压缩.py   # 结构等价节点压缩模块
 │   └── domiran_iteration.py  # 基础迭代计算模块
 │
-├── cpp-extensibility/        # 边脆弱性计算的 C++ 高性能实现（对应论文的可扩展性部分）
+├── cpp-extensibility/        # 边脆弱性计算的 C++ 高性能实现（对应论文的可扩展性部分，即将上传）
 │   ├── calculator_fast_pivot.cpp    # 枢纽算法：基于主元（pivot）累加的快速边脆弱性计算
 │   ├── calculator_superslow.cpp     # 邻居对算法：朴素邻居对枚举实现（正确性对照基线）
 │   ├── performance_fast_pivot.log   # 枢纽算法性能日志
@@ -27,17 +27,17 @@ This repository contains the official implementation of the paper *"Effective an
 │
 ├── generator-union.py        # 结果加权脚本：对网络/结果进行脆弱性加权合并
 │
-├── Data/                     # 示例实验数据（4 个代表性网络）
-│   ├── email-16000/          # Email 网络（n = 16,000 规模）
-│   ├── facebook-5000/        # Facebook 网络（n = 5,000 规模）
-│   ├── hert-3000/            # Hetrec 网络（n = 3,000 规模）
-│   └── pokec-1000000/        # Pokec 网络（n = 1,000,000 规模）
+├── Data/                     # 示例实验数据（4 个代表性网络，边列表格式：源节点 目标节点 权重）
+│   ├── email/email.txt       # Email 网络
+│   ├── facebook/facebook.txt # Facebook 网络
+│   ├── DIP/Dip.txt           # DIP 蛋白质交互网络
+│   └── hert/hert.txt         # Hetrec 网络
 │
 ├── requirements.txt          # Python 依赖清单
 └── README.md
 ```
 
-> 说明：仓库中**不包含**网络生成（generator）相关代码；`Data/` 仅保留上述 4 个代表性结果，完整实验数据可联系作者获取。
+> 说明：仓库中**不包含**网络生成（generator）相关代码；`Data/` 仅保留上述 4 个代表性网络，完整实验数据（如 Pokec 百万节点网络）可联系作者获取。
 
 ## 环境依赖 | Requirements
 
