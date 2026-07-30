@@ -15,9 +15,9 @@ This repository contains the official implementation of the paper *"Effective an
 │   ├── main_iteration+.py    # DomiRank-Iter⁺：加速迭代求解器（节点压缩 + 惰性更新 + Anderson 加速）
 │   ├── main_ana+.py          # DomiRank-Anal⁺：解析求解器（共轭梯度法，具严格收敛保证）
 │   ├── domirank_weight.py    # 边脆弱性加权模块（Ω = Ω_N · Ω_C）
-│   ├── domirank_improve.py   # 改进的加权计算模块
-│   ├── domirank_结构压缩.py   # 结构等价节点压缩模块
-│   └── domiran_iteration.py  # 基础迭代计算模块
+│   ├── domirank_improve.py   
+│   ├── domirank_结构压缩.py   
+│   └── domiran_iteration.py  
 │
 ├── cpp-extensibility/        # 边脆弱性计算的 C++ 高性能实现（对应论文的可扩展性部分）
 │   ├── calculator_fast_pivot.cpp    # 枢纽算法：基于主元（pivot）累加的快速边脆弱性计算
